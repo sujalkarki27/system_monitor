@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>💻 System Resource Monitor</h1>
+        
+        <div class="card">
+            <i class="fas fa-microchip icon"></i>
+            <p>CPU Usage</p>
+            <span id="cpu">Loading...</span>%
+        </div>
+
+        <div class="card">
+            <i class="fas fa-memory icon"></i>
+            <p>RAM Usage</p>
+            <span id="ram">Loading...</span>%
+        </div>
+
+        <div class="card">
+            <i class="fas fa-hdd icon"></i>
+            <p>Disk Usage</p>
+            <span id="disk">Loading...</span>%
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
